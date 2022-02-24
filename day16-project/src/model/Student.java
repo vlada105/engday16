@@ -13,6 +13,42 @@ public class Student implements Entity{
 		}
 		
 		
+		public int getId() {
+			return id;
+		}
+
+
+		public void setId(int id) {
+			this.id = id;
+		}
+
+
+		public String getName() {
+			return name;
+		}
+
+
+		public void setName(String name) {
+			this.name = name;
+		}
+
+
+		public String getSurname() {
+			return surname;
+		}
+
+
+		public void setSurname(String surname) {
+			this.surname = surname;
+		}
+
+		public boolean equals(Object obj) {
+			if(!(obj instanceof Student)) {
+				return false;
+			}
+			Student s = (Student) obj;
+			return getId() == s.getId();
+		}
 		@Override
 		public String sayHello() {
 			return "Hello, my name is: "+this.toString();
@@ -21,11 +57,6 @@ public class Student implements Entity{
 
 		@Override
 		public String toString() {
-			return name +" "+surname;
+			return getName() +" "+getSurname();
 		}
-		
-		
-		
-	
-		
 }
