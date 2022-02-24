@@ -11,6 +11,10 @@ public class Stack {
 		this.data = data;
 	}
 
+	public List<Integer> getData() {
+		return data;
+	}
+
 	public int sum() {
 		int s = 0;
 		for (int n : data) {
