@@ -1,5 +1,6 @@
 package util;
 
+import java.util.Iterator;
 import java.util.List;
 
 public class Stack {
@@ -12,7 +13,12 @@ public class Stack {
 	}
 
 	public int sum() {
-		throw new RuntimeException("Not yet implemented!");
+		int s = 0;
+		Iterator<Integer> i = data.iterator();
+		while (i.hasNext()) {
+			s += i.next();
+		}
+		return s;
 	}
 
 }
