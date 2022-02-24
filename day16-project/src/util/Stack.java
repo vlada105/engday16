@@ -12,7 +12,11 @@ public class Stack {
 	}
 
 	public int sum() {
-		throw new RuntimeException("Not yet implemented!");
+		int s = 0;
+		for(int n : data) {
+			s+=n;
+		}
+		return s;
 	}
 
 }
