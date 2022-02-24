@@ -1,0 +1,5 @@
+package model;
+
+public enum Breeds {
+	MIXED, DOBERMAN, POODLE, PITTBULL, STAFFORD_TERRIER, BULLDOG, GOLDEN_RETRIEVER
+}
